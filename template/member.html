@@ -1,0 +1,60 @@
+<md-content>
+    <div layout="column" layout-fill class="white">
+        <md-whiteframe class="md-whiteframe-z1">
+            <div layout="row" layout-align="start center">
+                <div flex="5" class="MemBorder">
+                    <h3>ID</h3>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h3>姓名</h3>
+                </div>
+                <div flex="20" class="MemBorder">
+                    <h3>手机号码</h3>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h3>公司</h3>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h3>职位</h3>
+                </div>
+                <div flex="25" class="MemBorder">
+                    <h3>Email</h3>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h3>是否私董</h3>
+                </div>
+            </div>
+        </md-whiteframe>
+        <md-whiteframe class="md-whiteframe-z1" ng-repeat="member in pageData" ng-click="showAdvanced($event,member)">
+            <div layout="row" layout-align="start center" >
+                <div flex="5" class="MemBorder">
+                    <h4>{{member.id}}</h4>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h4>{{member.name}}</h4>
+                </div>
+                <div flex="20" class="MemBorder">
+                    <h4>{{member.phoneNum}}</h4>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h4>{{member.company}}</h4>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h4>{{member.position}}</h4>
+                </div>
+                <div flex="25" class="MemBorder">
+                    <h4>{{member.email}}</h4>
+                </div>
+                <div flex="10" class="MemBorder">
+                    <h4>{{member.judge}}</h4>
+                </div>
+            </div>
+        </md-whiteframe>
+        <div layout="row" layout-align="center center">
+            <i class="material-icons  MyIcon2" ng-click="goBefore()">&#xE314;</i>
+            <p class="ip">{{pageNum}}</p>
+            <i class="material-icons  MyIcon2" ng-click="goNext()">&#xE315;</i>
+            <h3 class="page">共{{pageNumMax}}页</h3>
+        </div>
+    </div>
+</md-content>

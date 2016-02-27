@@ -1,0 +1,49 @@
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1" />
+
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Css/index.css">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="Js/route.js"></script>
+    <script src="Js/index.js"></script>
+    <script src="Js/jquery.min.js"></script>
+    <title>品尚后台管理系统</title>
+</head>
+<body>
+<div layout="row" flex ng-controller="AppCtrl" class="wdiv" style="height: 100%">
+    <div flex="14" class="left" style="overflow: hidden">
+        <md-toolbar class="md-theme-indigo">
+            <h1 class="md-toolbar-tools header">Admin</h1>
+        </md-toolbar>
+        <section layout="column" layout-align="center center" style="margin-top: 20px">
+            <md-button ng-href="#member" class="md-raised btnwidth" style="background-color: #2c3b42"><h3>会员列表</h3></md-button>
+            <md-button ng-href="#audit" class="md-raised btnwidth" style="background-color: #2c3b42"><h3>会员审核</h3></md-button>
+            <md-button ng-href="#sidong" class="md-raised btnwidth" style="background-color: #2c3b42"><h3>私董列表</h3></md-button>
+            <md-fab-speed-dial  md-direction="down" class="md-scale">
+                <md-fab-trigger >
+                    <md-button  class="md-raised btnwidth" style="background-color: #2c3b42"><h3>活动发布</h3></md-button>
+                </md-fab-trigger>
+                <md-fab-actions >
+                    <md-button ng-href="#freeActivity"  class="md-raised btnwidth" style="background-color: #2c3b42"><h3>免费活动</h3></md-button>
+                    <md-button ng-href="#ActivityReview"  class="md-raised btnwidth" style="background-color: #2c3b42"><h3>活动回顾</h3></md-button>
+                    <md-button ng-href="#sidongActivity"  class="md-raised btnwidth" style="background-color: #2c3b42"><h3>私董圈活动</h3></md-button>
+                </md-fab-actions>
+            </md-fab-speed-dial>
+        </section>
+    </div>
+    <div flex="85" class="right">
+        <md-toolbar class="md-theme-indigo right_header">
+        </md-toolbar>
+        <div style="margin-top: 5%" ng-view></div>
+    </div>
+</div>
+</body>
+</html>

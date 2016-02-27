@@ -1,0 +1,58 @@
+<div layout="row" layout-wrap layout-align="center center" >
+    <div flex="20" ng-repeat="activity in pageData">
+        <md-content class="md-padding cardStyle">
+            <md-card>
+                <i class="material-icons MyIcon3" ng-click="showConfirm($event,activity.id)">clear</i>
+                <img ng-src="{{activity.url}}" class="md-card-image imgfixed" alt="Washed Out" ng-click="showAdvanced($event,activity)">
+                <md-card-content>
+                    <h4>标题</h4>
+                    <span>{{activity.title | limitTo:8}}</span>
+                    <h4>链接</h4>
+                    <span>{{activity.link | limitTo: 15}}</span>
+                </md-card-content>
+            </md-card>
+        </md-content>
+    </div>
+</div>
+<div layout="row" layout-align="center center">
+    <i class="material-icons  MyIcon2" ng-click="goBefore()">&#xE314;</i>
+    <p class="ip">{{pageNum}}</p>
+    <i class="material-icons  MyIcon2" ng-click="goNext()">&#xE315;</i>
+    <h3 class="page">共{{pageNumMax}}页</h3>
+</div>
+
+<div ng-controller="SidongBottomSheet" class="md-padding ">
+    <div class="bottom-sheet-demo inset" layout="row" layout-sm="column" layout-align="center">
+        <md-button flex="50" class="md-primary md-raised" ng-click="showListBottomSheet($event)"><p class="p1">点击发布活动</p></md-button>
+    </div>
+    <script type="text/ng-template" id="ScSidongActivity.html">
+        <md-bottom-sheet class="md-list md-has-header" style="position: fixed;bottom: 0;background-color: #eeeeee">
+            <md-subheader><h3>活动发布</h3></md-subheader>
+            <div layout="row">
+                <div flex="70">
+                    <md-input-container>
+                        <label><h4>标题</h4></label>
+                        <input type="text" ng-model="sidongTitle">
+                    </md-input-container>
+                    <md-input-container>
+                        <label><h4>链接</h4></label>
+                        <input type="text" ng-model="sidongLink">
+                    </md-input-container>
+                    <div layout="row" layout-align="center">
+                        <md-button flex="70"  class="md-primary md-raised" ng-click="postSidongActivity()">
+                            <p class="p1">发布活动</p>
+                        </md-button>
+                    </div>
+                </div>
+                <div flex layout="row" layout-align="center">
+                    <input style="display: none" id="img" type="file" onchange="test(this)" accept="image/*" /><br>
+                    <div flex layout="row" layout-align="center">
+                        <div class="imgCon" ng-click="sub()">
+                            <img id="img1" class="imgfixed2" src="images/scBg.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </md-bottom-sheet>
+    </script>
+</div>

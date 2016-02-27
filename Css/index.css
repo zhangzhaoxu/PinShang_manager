@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.wdiv{
+    height: 100%;
+}
+
+input{
+    font-family: 微软雅黑;
+}
+
+h3{
+    font-family: 微软雅黑;
+    color: #508aab;
+    font-weight: bold;
+}
+
+h4{
+    font-family: 微软雅黑;
+    color: #508aab;
+    font-weight: normal;
+    line-height: 150%
+}
+
+h3{
+    font-family: 微软雅黑;
+    font-weight: normal;
+    text-align: center;
+}
+
+.header{
+    font-family: 微软雅黑;
+    padding-left: 20%;
+    font-size: 25px;
+    background-color: #3680a9;
+}
+
+.left{
+    background-color: #222d31;
+}
+
+.right{
+    background-color: #eeeeee;
+    overflow-y: scroll;
+}
+
+.right_header{
+    position: fixed;
+    top: 0;
+    background-color: #3c8dbc;
+}
+
+.right_header p{
+    margin-left: 80%;
+}
+
+.btnwidth{
+    width: 400px;
+}
+
+.white md-whiteframe {
+    background: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ta{
+    border-right: 1px solid #cccccc;
+    text-align: center;
+    padding: 10px;
+    padding-right: 20px;
+    color: #3680a9;
+    font-family: 微软雅黑;
+}
+
+span{
+    color: #000000;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.MyIcon{
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.MyIcon2{
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ip{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 23px;
+    font-family: 微软雅黑;
+    color: #3680a9;
+    font-weight: bold;
+}
+
+.auditBtn{
+    float: right;
+}
+
+.auditP{
+    color: antiquewhite;
+    font-family: 微软雅黑;
+    font-weight: bold;
+}
+
+.cardStyle{
+    background-color: transparent;
+    font-family: 微软雅黑;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cardStyle span{
+    font-size: 13px;
+    font-family: 微软雅黑;
+}
+
+.subBtn{
+    font-family: 微软雅黑;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.imgCon{
+    margin-bottom: 30px;
+    padding: 3px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.MemBorder{
+    border-right: 1px solid #cccccc;
+    text-align: center;
+}
+
+.MemBorder h3{
+    color: brown;
+}
+
+.page{
+    padding-right: 20px;
+}
+
+p{
+    color: red;
+}
+
+.p1{
+    color: antiquewhite;
+    font-size: 20px;
+    font-family: 微软雅黑;
+}
+
+.bottomsheet{
+    background-color: #eeeeee;
+    bottom: 0;
+    position: absolute;
+}
+
+.imgfixed{
+    height: 20%;
+}
+
+.imgfixed2{
+    height: auto;
+    width: 200px;
+}
+
+.deleteBtn{
+    width: 30%;
+    margin-left: 65%;
+}
+
+.deleteBtn p{
+    color: #ffffff;
+    font-family: 微软雅黑;
+}
+
+.MyIcon3{
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.btnCon{
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.btnCon span{
+    color: #3680a9;
+    cursor: pointer;
+}
+
+a:link{
+    text-decoration: none;
+}

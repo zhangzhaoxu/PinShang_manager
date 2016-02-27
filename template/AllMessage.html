@@ -1,0 +1,67 @@
+<md-dialog aria-label="会员申请" style="width: 50%">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h3 style="color: #ffffff">会员详细信息</h3>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="hide()">
+                    <i class="material-icons MyIcon" aria-label="Close dialog">clear</i>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content>
+            <div layout="row">
+                <div layout="column" flex>
+                    <div>
+                        <h4>ID:{{member.id}}</h4>
+                    </div>
+                    <div>
+                        <h4>姓名:{{member.name}}</h4>
+                    </div>
+                    <div>
+                        <h4>手机号:{{member.phoneNum}}</h4>
+                    </div>
+                    <div>
+                        <h4>公司:{{member.company}}</h4>
+                    </div>
+                    <div>
+                        <h4>职位:{{member.position}}</h4>
+                    </div>
+                    <div>
+                        <h4>车型:{{member.car}}</h4>
+                    </div>
+                    <div>
+                        <h4>邮箱:{{member.email}}</h4>
+                    </div>
+                    <div>
+                        <h4>是否私董:{{member.judge | change}}</h4>
+                    </div>
+                    <div>
+                        <h4>出生日期:{{member.birth}}</h4>
+                    </div>
+                    <div>
+                        <h4>年收入:{{member.salary}}</h4>
+                    </div>
+                    <div>
+                        <h4>入会推荐人:{{member.man}}</h4>
+                    </div>
+                    <div>
+                        <h4>感兴趣项目:{{member.interest}}</h4>
+                    </div>
+                    <div>
+                        <h4>公司资源:{{member.resource}}</h4>
+                    </div>
+                    <div>
+                        <h4>公司需求:{{member.need}}</h4>
+                    </div>
+                    <div>
+                        <h4>个人履历:{{member.experience}}</h4>
+                    </div>
+                </div>
+                <div flex layout="row" layout-align="center center">
+                    <md-card>
+                        <img ng-src="{{member.imgSrc}}" class="md-card-image" style="width: 200px;height: auto" alt="Washed Out">
+                    </md-card>
+                </div>
+            </div>
+        </md-dialog-content>
+</md-dialog>
